@@ -1,0 +1,190 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 16px;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(36, 42, 42);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('back2.jpeg');
+
+}
+
+
+.outercircle {
+    margin-top: 250px;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    /* Change the background color to be the starting color of the animation */
+
+
+    /*modifies the content isnside the div*/
+    background-color: rgb(185, 241, 237);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Add the animation property with the name of the animation, its duration, and a delay if desired */
+    animation: glowing 10s linear infinite;
+}
+
+@keyframes glowing {
+    0% {
+        /* Define the starting color of the animation */
+        background-color: rgb(226, 121, 83);
+    }
+
+    25% {
+        /* Define the first glowing color of the animation */
+        background-color: rgb(190, 234, 144);
+    }
+
+    50% {
+        /* Define the first glowing color of the animation */
+        background-color: rgb(147, 170, 226);
+    }
+
+    75% {
+        /* Define the first glowing color of the animation */
+        background-color: rgb(214, 230, 133);
+    }
+
+    100% {
+        /* Define the second glowing color of the animation */
+        background-color: rgb(143, 193, 190);
+    }
+}
+
+
+.innercircle {
+    height: 250px;
+    width: 250px;
+    border-radius: 35%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.text {
+    color: rgb(244, 255, 255);
+    font-size: 45px;
+}
+
+
+.sec {
+    font-size: 42px;
+}
+
+.msec {
+    font-size: 18px;
+}
+
+
+.btn_wrap {
+    width: 250px;
+    margin-top: 25px;
+    margin-left: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid rgb(181, 155, 155);
+    font-weight: 800;
+}
+
+.btn:hover {
+    background-color: black;
+    color: wheat;
+    font-weight: 600;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    padding: 0;
+
+}
+
+.laps {
+    width: 250px;
+    height: 300px;
+    overflow: auto;
+    list-style: none;
+    color: rgb(243, 189, 96);
+    margin: 28px;
+    border: 2px solid;
+    position: relative;
+    padding: 30px 0;
+
+
+
+}
+
+.laps::-webkit-scrollbar {
+    display: none;
+    background-color: white;
+    color: rgb(158, 130, 130);
+}
+
+.listitems {
+    display: inline-block;
+    width: 250px;
+    text-align: center;
+    padding: 15px;
+    padding-top: 15px;
+}
+
+.number {
+    color: rgb(14, 138, 247);
+
+}
+
+.timespamp {
+    display: inline-block;
+    margin-left: 30px;
+    color: rgb(176, 188, 9);
+    padding-left: 30px;
+}
+
+.lapclr {
+    display: block;
+    position: absolute;
+    z-index: 1000;
+    top: 0px;
+    left: 50%;
+    transform: translate(-55%);
+    width: 130px;
+    padding: 10px 0;
+    border-radius: 40px;
+    background-color: rgba(136, 222, 222, 0.4);
+    border: 1px solid white;
+
+
+}
+
+
+.hidden-re,
+.hidden-la,
+.hidden-clr {
+    visibility: hidden;
+}
+
+
+.listitems li:first-child {
+    padding-top: 28px;
+    background-color: aqua;
+}
